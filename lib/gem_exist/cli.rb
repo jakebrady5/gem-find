@@ -15,14 +15,14 @@ class GemExist::Cli
   end
 
   def select_detail
-    if @gem_search.names.size < 1
+    if FoundGem.all.size < 1
       puts "No search results found. Congratulations?"
       loop_no_back
     else
       puts "Please enter the number of the gem you want to see more information about."
       @detail = gets.strip.to_i
       if detail != 0
-        @gem_search.get_gem_data(detail)
+        FoundGem.all[detail - 1].get_data
         print_detail
       end
     end
@@ -30,10 +30,10 @@ class GemExist::Cli
 
   def print_detail
     puts "-------------------------------------------"
-    puts "Gem Name: #{@gem_search.names[@detail - 1]}"
-    puts "Gem Description: #{@gem_search.desc}"
-    puts "Gem Author: #{@gem_search.author}"
-    puts "Gem Downloads: #{@gem_search.downloads}"
+    puts "Gem Name: #{FoundGem.all[detail - 1].name}"
+    puts "Gem Description: #{FoundGem.all[detail - 1].desc}"
+    puts "Gem Author: #{FoundGem.all[detail - 1].author}"
+    puts "Gem Downloads: #{FoundGem.all[detail - 1].downloads}"
     puts "-------------------------------------------"
     loop_or_quit?
   end
@@ -46,6 +46,7 @@ class GemExist::Cli
       @gem_search.display_names
       select_detail
     when "new search"
+      FoundGem.destroy_all
       begin_new_search
     when "exit"
       puts "Goodbye!"
