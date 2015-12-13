@@ -11,6 +11,3 @@ Run `bin/gem-exist` to begin a search.
 
 ## License
 This gem is made available as an open source project through the [MIT License](http://opensource.org/licenses/MIT).
-
-- [How to build a ruby gem](http://guides.rubygems.org/make-your-own-gem/)
-- [How to publish your gem](http://guides.rubygems.org/publishing/)
