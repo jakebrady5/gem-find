@@ -8,7 +8,6 @@ class GemExist::Cli
     puts "(You may type \"exit\" at any time to quit)"
     puts "-------------------------------------------"
     search_term = gets.strip
-    binding.pry
     if search_term != "exit"
       @gem_search = GemExist::SearchRubygems.new(search_term)
       select_detail
