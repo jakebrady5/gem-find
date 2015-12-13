@@ -1,4 +1,5 @@
 # Search Rubygems.org
+[![Code Climate](https://codeclimate.com/github/jakebrady5/cli-data-gem-project-v-000/badges/gpa.svg)](https://codeclimate.com/github/jakebrady5/cli-data-gem-project-v-000)
 
 ## Overview
 This gem utilizes the Rubygems API to search the site based on the user's search term.
