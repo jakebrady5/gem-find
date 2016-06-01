@@ -1,3 +1,3 @@
-module Gem_exist
+module GemFind
   VERSION = "0.1.0"
 end

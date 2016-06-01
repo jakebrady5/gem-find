@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Search rubygems.org for gem info."
   s.author = ["Jake Brady"]
   s.email = "jakebrady5@gmail.com"
-  s.files = ["lib/gem-find.rb", "lib/gem-find/cli.rb", "lib/gem-find/search_rubygems.rb", "lib/gem-find/version.rb"]
+  s.files = ["lib/gem-find.rb", "lib/gem-find/cli.rb", "lib/gem-find/found_gem.rb", "lib/gem-find/search_rubygems.rb", "lib/gem-find/version.rb", "config/environment.rb"]
   s.executables = ["gem-find"]
   s.require_paths = ["lib", "lib/gem-find"]
   s.platform = Gem::Platform::CURRENT
