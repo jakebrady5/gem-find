@@ -7,7 +7,7 @@ The user can then obtain further detail about each search result as desired.
 The gem allows you to view multiple results per search, and initiate multiple searches per session.
 
 ## Usage
-Run `bin/gem-exist` to begin a search.
+This gem is hosted on rubygems.org.  If you have bundler installed, typing `gem install gem-find` will install this gem locally.  Run `gem-find` to begin a search.
 
 ## License
 This gem is made available as an open source project through the [MIT License](http://opensource.org/licenses/MIT).
