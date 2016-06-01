@@ -3,4 +3,4 @@
 require_relative '../config/environment'
 
 
-GemExist::Cli.new.begin_new_search
+GemFind::Cli.new.begin_new_search

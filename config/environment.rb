@@ -1,8 +1,8 @@
-require_relative '../lib/gem_exist'
-require_relative '../lib/gem_exist/cli'
-require_relative '../lib/gem_exist/search_rubygems'
-require_relative '../lib/gem_exist/version'
-require_relative '../lib/gem_exist/found_gem.rb'
+require_relative '../lib/gem-find'
+require_relative '../lib/gem-find/cli'
+require_relative '../lib/gem-find/search_rubygems'
+require_relative '../lib/gem-find/version'
+require_relative '../lib/gem-find/found_gem.rb'
 
 require 'open-uri'
 require 'nokogiri'

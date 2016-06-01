@@ -6,7 +6,7 @@ describe FoundGem do
 
     allow($stdout).to receive(:puts)
 
-    search = GemExist::SearchRubygems.new("learn")
+    search = GemFind::SearchRubygems.new("learn")
     FoundGem.all[0].get_data
     expect(FoundGem.all[0].desc).not_to eq(nil)
     expect(FoundGem.all[0].author).not_to eq(nil)

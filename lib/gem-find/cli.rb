@@ -1,4 +1,4 @@
-class GemExist::Cli
+class GemFind::Cli
 
   attr_accessor :gem_search, :detail
 
@@ -9,7 +9,7 @@ class GemExist::Cli
     puts "-------------------------------------------"
     search_term = gets.strip
     if search_term != "exit"
-      @gem_search = GemExist::SearchRubygems.new(search_term)
+      @gem_search = GemFind::SearchRubygems.new(search_term)
       select_detail
     end
   end

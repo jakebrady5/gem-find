@@ -1,4 +1,4 @@
-class GemExist::SearchRubygems
+class GemFind::SearchRubygems
 
   attr_accessor :search_term, :url, :results
 
@@ -6,7 +6,6 @@ class GemExist::SearchRubygems
     @names = []
     @project_uri = []
     @search_term = search_term
-    #add ability to handle multi word strings? gems don't appear to contain spaces?
     @url = "https://rubygems.org/api/v1/search.json?query=#{search_term}"
     get_search_results
   end
@@ -18,7 +17,7 @@ class GemExist::SearchRubygems
   end
 
   def narrow_results
-    @results.take(7)
+    @results.take(10)
   end
 
   def create_gem_data(narrowed)
